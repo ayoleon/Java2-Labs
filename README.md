@@ -55,6 +55,11 @@ cd src
 javac Baseball.java  
 java Baseball
 ```
+- **Sample Output:**  
+- Prompts for player names  
+- Displays player roster  
+- Simulates a scoreboard with multidimensional arrays  
+- Demonstrates arrays and ArrayLists of class objects
 
 ### Week 3 – GUI Programming with Swing and AWT
 - **Description:** Introduces GUI development using Swing and AWT, including dialog boxes, text fields, buttons, and event handling.  
