@@ -35,9 +35,9 @@ The labs focus on **intermediate Java programming concepts**, including:
   **Command Line:**
   ```bash
   cd src
-javac Employee.java  
-java Employee
-```
+  javac Employee.java  
+  java Employee
+  ```
 - **Sample Output:**  
 - Displays employee information  
 - Calculates estimated and exact salaries  
