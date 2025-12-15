@@ -22,4 +22,20 @@ based on parameter types and class inheritance.
   different implementations of `computeSalary()`.
 
 ## How to Run
-1. Compile the program:
+### IntelliJ IDEA
+1. Open the project in IntelliJ IDEA.
+2. Set `Employee.java` as the main class.
+3. Click Run.
+
+### Command Line
+1. Navigate to the `src` folder.
+2. Compile:
+   ```bash
+   javac Main.java```
+3. Run:
+   java Employee.java
+
+## Sample Output
+- Displays employee information
+- Calculates estimated and exact salary values
+- Prompts the user to enter hours and wage for salary computation
