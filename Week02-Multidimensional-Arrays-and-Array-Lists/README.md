@@ -49,6 +49,6 @@ Alex
 Player Roster:
 [Leon, Tamia, Alex, ...]
 
--Displays player roster from user input
--Simulates a scoreboard with multidimensional arrays
--Demonstrates creating arrays and ArrayLists of class objects
+- Displays player roster from user input
+- Simulates a scoreboard with multidimensional arrays
+- Demonstrates creating arrays and ArrayLists of class objects
