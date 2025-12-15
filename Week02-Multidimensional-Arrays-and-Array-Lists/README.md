@@ -39,14 +39,14 @@ scoreboard data.
 ```
 
 ## Sample Output
-Enter Player #1's name:
-Leon
-Enter Player #2's name:
-Tamia
-Enter Player #3's name:
-Alex
-...
-Player Roster:
+Enter Player #1's name:  
+Leon  
+Enter Player #2's name:  
+Tamia  
+Enter Player #3's name:  
+Alex  
+...  
+Player Roster:  
 [Leon, Tamia, Alex, ...]
 
 - Displays player roster from user input
