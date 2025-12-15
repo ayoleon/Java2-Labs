@@ -31,9 +31,12 @@ based on parameter types and class inheritance.
 1. Navigate to the `src` folder.
 2. Compile:
    ```bash
-   javac Main.java```
+   javac Employee.java
+   ```
 3. Run:
-   java Employee.java
+   ```bash
+   java Employee
+   ```
 
 ## Sample Output
 - Displays employee information
