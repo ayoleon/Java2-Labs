@@ -125,6 +125,23 @@ java Main
   - Rental and purchase totals are calculated and displayed
   - Demonstrates menu-based event handling, file I/O, and code reuse
 
+### Week 6 – Movie Database with File I/O and Menu-Driven GUI
+- **Description:** Implements a menu-driven movie database using Java Swing. Users can open a movie file to view movie data one character at a time or create a backup copy of the file. Demonstrates low-level file handling combined with a simple GUI.  
+- **Concepts:** Java Swing components (`JFrame`, `JMenu`, `JMenuItem`, `JOptionPane`), ActionListener, File I/O using `FileInputStream` and `FileOutputStream`, buffered copying, arrays for buffering, FlowLayout, System.exit(0).  
+- **Files:** `MovieBackup.java`, `Movies/Movie.txt`, `Movies/MovieBackup.txt`  
+- **How to Run:**  
+**IntelliJ IDEA:** Set `MovieBackup.java` as main class and Run. Ensure `Movies/Movie.txt` exists.  
+**Command Line:**
+```bash
+cd src
+javac MovieBackup.java
+java MovieBackup
+```
+- **Sample Output:**
+  - **Open Movies:** Each character of Movie.txt is displayed in a JOptionPane dialog sequentially.
+  - **Backup Movies:** Creates MovieBackup.txt as a copy of Movie.txt.
+  - **Exit:** Closes the program cleanly.
+
 ---
 
 ## How to Run All Labs
@@ -140,7 +157,7 @@ To run any lab:
 ---
 
 ## Platform Notes
-- Weeks 1–3: Developed and tested on Windows using IntelliJ IDEA.
+- Weeks 1–3, 6: Developed and tested on Windows using IntelliJ IDEA.
 - Weeks 4–5: Developed and tested on macOS using IntelliJ IDEA. Some GUI behaviors may differ slightly across operating systems, including:
   - Keyboard mnemonics and menu shortcuts may behave differently due to OS-level menu handling.
   - File paths use forward slashes on macOS, which are compatible with Java’s cross-platform file handling.
