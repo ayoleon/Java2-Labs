@@ -16,10 +16,12 @@ The labs focus on **intermediate Java programming concepts**, including:
 - Event-driven programming for real-world applications like a customer checkout system.
 - Basic networking concepts using Java sockets (ServerSocket, Socket)
 - Recursive programming and comparison with iterative solutions
+- Basic sorting algorithms (Bubble Sort) and performance analysis
+- Comparing Java collection types: ArrayList, LinkedList, HashMap, and their use cases
  
 
 ## Course Progression
-These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build directly on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, menu-based application structure, algorithmic thinking through recursion, and basic networking concepts such as client-server communication.
+These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build directly on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, menu-based application structure, algorithmic thinking through recursion, basic networking concepts such as client-server communication, algorithmic thinking with sorting (Bubble Sort), and comparing different list types and mapping structures for appropriate use in applications using Java's Collection Framework.
 
 ---
 
@@ -49,6 +51,12 @@ These labs reflect a progression from foundational Java concepts to more advance
 - Understanding **recursion**, base cases, and recursive method calls
 - Comparing **recursive vs iterative problem-solving** approaches
 - Recognizing performance and memory tradeoffs between recursion and loops
+- Implementing basic sorting algorithms **(Bubble Sort)** and understanding algorithm efficiency  
+- Using **Java Collection Framework:** ArrayList, LinkedList, HashMap  
+- Iterating over collections using for-loops and iterators  
+- Adding, searching, and deleting elements in collections  
+- Formatting output for display and computing aggregates (e.g., averages)  
+- Understanding **trade-offs between different data structures**
 
 ---
 
@@ -242,6 +250,41 @@ java SimpleClient
 - The server must be running before the client connets.
 - Communication occurs over port 5000 using localhost.
 - This lab demonstrates basic socket communication with a single client.
+
+### Week 10 – Bubble Sort Algorithm
+- **Description:** Implements the Bubble Sort algorithm to sort an array of integers in ascending order. Demonstrates nested loops, element comparison, and swapping.
+- **Concepts:** Sorting algorithms, nested loops, array manipulation, ascending/descending order, early exit optimization.
+- **Files:** `BubbleSort.java`
+- **How to Run:**
+  **IntelliJ IDEA:** Set `BubbleSort.java` as main class and Run.
+  **Command Line:**
+  ```bash
+  cd src
+  javac BubbleSort.java
+  java BubbleSort
+  ```
+- **Sample Output:**
+  - Original unsorted array displayed
+  - Sorted array displayed after applying Bubble Sort
+
+### Week 10 – Data Structures Comparison
+- **Description:** Compares different Java collection types for storing and managing student records. Students enter names and grades, and the program demonstrates adding, searching, and deleting entries.
+- **Concepts:** Java Collection Framework, ArrayList, LinkedList, HashMap, iteration with iterators, containsKey(), basic data manipulation, average computation, user input with Scanner.
+- **Files:** `StudentRecords.java`
+- **How to Run:**
+  **IntelliJ IDEA:** Set `StudentRecords.java` as main class and Run.
+  **Command Line:**
+  ```bash
+  cd src
+  javac StudentRecords.java
+  java StudentRecords
+  ```
+- **Sample Output:**
+  - Prompts for student names and grades
+  - Displays each student's grade
+  - Displays class average
+  - Allows searching for a student by name
+  - Allows removing a student and updates grade display
 ---
 
 ## How to Run All Labs
