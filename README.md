@@ -28,18 +28,18 @@ These labs reflect a progression from foundational Java concepts to more advance
 - Building **GUI applications** with Swing and AWT, including event listeners  
 - Formatting numeric output using `DecimalFormat`  
 - Structuring programs with multiple classes and modular methods
-- Implementing menu-driven interfaces with keyboard shortcuts
-- Performing file input and output using BufferedReader and BufferedWriter
+- Implementing menu-driven **interfaces** with keyboard shortcuts
+- Performing **file input and output** using `BufferedReader` and `BufferedWriter`
 - Reusing and adapting code across multiple classes
-- Event-driven programming with ActionListener, MouseListener, and MenuListener
-- Managing cross-platform GUI behavior (macOS vs Windows)
-- Connecting Java programs to Access databases via JDBC (UCanAccess)
-- Writing and executing SQL queries (SELECT, INSERT, CREATE TABLE, WHERE)
+- Event-driven programming with `ActionListener`, `MouseListener`, and `MenuListener`
+- Managing **cross-platform** GUI behavior (macOS vs Windows)
+- Connecting Java programs to Access databases via **JDBC (UCanAccess)**
+- Writing and **executing SQL queries** (`SELECT`, `INSERT`, `CREATE TABLE`, `WHERE`)
 - Structuring programs with multiple interacting classes
 - Passing data between GUI classes and handling user input dynamically
 - Designing multi-panel GUI applications with Swing and Grid/Border layouts
-- Implementing event-driven programming for buttons and user interactions in GUI
-- Managing hardcoded database paths and ensuring cross-class access to connections
+- Implementing **event-driven programming** for buttons and user interactions in GUI
+- Managing hardcoded database paths and ensuring cross-class access to **connections**
 
 ---
 
@@ -205,7 +205,7 @@ To run any lab:
 ---
 
 ## Platform Notes
-- Weeks 1–3, 6: Developed and tested on Windows using IntelliJ IDEA.
+- Weeks 1–3, 6-13: Developed and tested on Windows using IntelliJ IDEA.
 - Weeks 4–5: Developed and tested on macOS using IntelliJ IDEA. Some GUI behaviors may differ slightly across operating systems, including:
   - Keyboard mnemonics and menu shortcuts may behave differently due to OS-level menu handling.
   - File paths use forward slashes on macOS, which are compatible with Java’s cross-platform file handling.
