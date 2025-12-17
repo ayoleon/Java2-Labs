@@ -14,9 +14,12 @@ The labs focus on **intermediate Java programming concepts**, including:
 - Database integration using JDBC with Microsoft Access, SQL query execution
 - Multi-class GUI design
 - Event-driven programming for real-world applications like a customer checkout system.
+- Basic networking concepts using Java sockets (ServerSocket, Socket)
+- Recursive programming and comparison with iterative solutions
+ 
 
 ## Course Progression
-These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build directly on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, and menu-based application structure.
+These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build directly on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, menu-based application structure, algorithmic thinking through recursion, and basic networking concepts such as client-server communication.
 
 ---
 
@@ -40,6 +43,12 @@ These labs reflect a progression from foundational Java concepts to more advance
 - Designing multi-panel GUI applications with Swing and Grid/Border layouts
 - Implementing **event-driven programming** for buttons and user interactions in GUI
 - Managing hardcoded database paths and ensuring cross-class access to **connections**
+- Implementing **basic client-server communication** using Java sockets
+- Using `ServerSocket` and `Socket` for network-based data exchange
+- Sending and receiving data using **input/output streams** over a network
+- Understanding **recursion**, base cases, and recursive method calls
+- Comparing **recursive vs iterative problem-solving** approaches
+- Recognizing performance and memory tradeoffs between recursion and loops
 
 ---
 
@@ -190,6 +199,49 @@ java DBase
 - **JDBC Notes:**  
 This lab includes its own `jdbc/ucanaccess-4.0.1` folder with all necessary `.jar` files. In IntelliJ IDEA, go to **File → Project Structure → Libraries → Add** and select the folder.
 
+### Week 9 – Recursion and Iteration Comparison
+- **Description:** Demonstrates the use of recursion and iteration to solve common programming problems. The lab includes a countdown example and multiplication of two numbers, implemented using both recursive and iterative approaches.
+- **Concepts:** Recursive methods, base cases, recursive calls, stack usage, iterative loops, comparison of recursion vs iteration, user input handling with Scanner.
+- **Files:**
+  - `Recursion.java`
+- **How to Run:**
+  **IntelliJ IDEA:** Set `Recursion.java` as the main class and Run.
+  Command Line:
+  ```bash
+    cd src
+    javac Recursion.java
+    java Recursion
+  ```
+- **Notes:**
+  - Only one section of the program is active at a time in main.
+  - Other method calls are commented out to allow testing different parts of the lab.
+  - Recursive methods rely on a base case to prevent infinite recursion.
+
+### Week 9 – Simple Client-Server Communication with Java Sockets
+- **Description:** Introduces basic networking concepts in Java through a simple client-server application. A server listens for incoming connections, sends a message to a client, and receives a response using socket communication.  
+- **Concepts:** Client-server architecture, Java networking (`ServerSocket`, `Socket`), input/output streams, `PrintWriter`, `BufferedReader`, exception handling, ports and localhost communication.  
+- **Files:** 
+  - `SimpleServer.java`  
+  - `SimpleClient.java`  
+- **How to Run:**  
+**IntelliJ IDEA:**  
+1. Run `SimpleServer.java` first to start the server.  
+2. Run `SimpleClient.java` in a separate run window to connect to the server.  
+
+**Command Line:**
+```bash
+cd src
+javac SimpleServer.java SimpleClient.java
+java SimpleServer
+```
+(Open a second terminal window)
+```bash
+java SimpleClient
+```
+## Notes
+- The server must be running before the client connets.
+- Communication occurs over port 5000 using localhost.
+- This lab demonstrates basic socket communication with a single client.
 ---
 
 ## How to Run All Labs
