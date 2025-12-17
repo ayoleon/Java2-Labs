@@ -11,6 +11,9 @@ The labs focus on **intermediate Java programming concepts**, including:
 - Event handling and parsing user input  
 - Formatting output with `DecimalFormat`
 - File input/output
+- Database integration using JDBC with Microsoft Access, SQL query execution
+- Multi-class GUI design
+- Event-driven programming for real-world applications like a customer checkout system.
 
 ## Course Progression
 These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build directly on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, and menu-based application structure.
@@ -30,6 +33,13 @@ These labs reflect a progression from foundational Java concepts to more advance
 - Reusing and adapting code across multiple classes
 - Event-driven programming with ActionListener, MouseListener, and MenuListener
 - Managing cross-platform GUI behavior (macOS vs Windows)
+- Connecting Java programs to Access databases via JDBC (UCanAccess)
+- Writing and executing SQL queries (SELECT, INSERT, CREATE TABLE, WHERE)
+- Structuring programs with multiple interacting classes
+- Passing data between GUI classes and handling user input dynamically
+- Designing multi-panel GUI applications with Swing and Grid/Border layouts
+- Implementing event-driven programming for buttons and user interactions in GUI
+- Managing hardcoded database paths and ensuring cross-class access to connections
 
 ---
 
@@ -141,6 +151,44 @@ java MovieBackup
   - **Open Movies:** Each character of Movie.txt is displayed in a JOptionPane dialog sequentially.
   - **Backup Movies:** Creates MovieBackup.txt as a copy of Movie.txt.
   - **Exit:** Closes the program cleanly.
+ 
+ ### Week 7 – Movie Database with Java Swing and Access
+- **Description:** Creates a simple movie customer database using Java Swing and Microsoft Access. Users can view and add customer entries in a GUI. JDBC (UCanAccess) is used to connect to the Access database.  
+- **Concepts:** Java Swing GUI (`JFrame`, `JTextField`, `JButton`, `JMenuBar`), ActionListener, JDBC, SQL (`SELECT`, `INSERT`), handling database connections, modular methods.  
+- **Files:** 
+  - `DBase.java`  
+  - `database/Movie.accdb`  
+  - `jdbc/ucanaccess-4.0.1/*.jar` (inside the lab folder)  
+- **How to Run:**  
+**IntelliJ IDEA:** Add the `jdbc/ucanaccess-4.0.1` folder in this lab as a library, set `DBase.java` as the main class, Run.  
+**Command Line:**
+```bash
+cd src
+javac DBase.java
+java DBase
+```
+- **JDBC Notes:**
+This lab includes its own jdbc/ucanaccess-4.0.1 folder with all necessary .jar files. In IntelliJ IDEA, go to File → Project Structure → Libraries → Add and select the folder.
+
+### Week 8 – Movie Database with Payment System
+- **Description:** Extends Week 7 by adding a payment system. Users can create a payment table, add records, display payment info, and perform checkout with tax calculation. GUI split into Customer Panel and Payment Panel.  
+- **Concepts:** Java Swing GUI panels, layout managers (`JPanel`, `GridLayout`, `BorderLayout`), ActionListener, JDBC, SQL (`CREATE TABLE`, `INSERT`, `SELECT`, `WHERE`), passing data between classes, event-driven programming.  
+- **Files:** 
+  - `DBase.java`  
+  - `Payment.java`  
+  - `PaymentMethod.java`  
+  - `database/Movie.accdb`  
+  - `jdbc/ucanaccess-4.0.1/*.jar` (inside the lab folder)  
+- **How to Run:**  
+**IntelliJ IDEA:** Add the `jdbc/ucanaccess-4.0.1` folder in this lab as a library, set `DBase.java` as the main class, Run.  
+**Command Line:**
+```bash
+cd src
+javac DBase.java Payment.java PaymentMethod.java
+java DBase
+```
+- **JDBC Notes:**  
+This lab includes its own `jdbc/ucanaccess-4.0.1` folder with all necessary `.jar` files. In IntelliJ IDEA, go to **File → Project Structure → Libraries → Add** and select the folder.
 
 ---
 
