@@ -51,11 +51,11 @@ Multiplication:
 ```bash
    cd Week09-Recursion/src
 ```
-3. Compile the program:
+2. Compile the program:
 ```bash
    javac Recursion.java
 ```
-5. Run the program:
+3. Run the program:
 ```bash
    java Recursion
 ```
