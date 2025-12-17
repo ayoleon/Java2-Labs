@@ -1,27 +1,25 @@
 # Java 2 Labs Repository
-
 ## Overview
-This repository contains some of my Java 2 lab projects completed during my second Java programming course.  
-The labs focus on **intermediate Java programming concepts**, including:
+This repository contains my Java 2 lab projects from my second Java programming course.  
+The labs cover **intermediate Java programming concepts** and real-world application development, including:
 
-- Object-oriented programming: classes, objects, constructors, inheritance, interfaces 
+- Object-oriented programming: classes, objects, constructors, inheritance, and interfaces  
 - Method overloading and overriding  
 - Arrays, multidimensional arrays, and ArrayLists  
 - GUI programming with Swing and AWT  
-- Event handling and parsing user input  
-- Formatting output with `DecimalFormat`
-- File input/output
-- Database integration using JDBC with Microsoft Access, SQL query execution
-- Multi-class GUI design
-- Event-driven programming for real-world applications like a customer checkout system.
-- Basic networking concepts using Java sockets (ServerSocket, Socket)
-- Recursive programming and comparison with iterative solutions
-- Basic sorting algorithms (Bubble Sort) and performance analysis
-- Comparing Java collection types: ArrayList, LinkedList, HashMap, and their use cases
+- Event handling and user input parsing  
+- Formatting output with `DecimalFormat`  
+- File input/output operations  
+- Database integration with JDBC and Microsoft Access  
+- Multi-class GUI design and event-driven programming  
+- Basic networking with Java sockets (`ServerSocket`, `Socket`)  
+- Recursive and iterative problem solving  
+- Basic sorting algorithms (Bubble Sort)  
+- Using Java collections: ArrayList, LinkedList, and HashMap, with emphasis on appropriate use cases
  
 
 ## Course Progression
-These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build directly on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, menu-based application structure, algorithmic thinking through recursion, basic networking concepts such as client-server communication, algorithmic thinking with sorting (Bubble Sort), and comparing different list types and mapping structures for appropriate use in applications using Java's Collection Framework.
+These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, and menu-based application structures. Students also practice algorithmic thinking through recursion and sorting (Bubble Sort), explore basic networking with client-server communication, and learn to select and use appropriate Java Collection Framework structures such as ArrayList, LinkedList, and HashMap.
 
 ---
 
@@ -29,34 +27,18 @@ These labs reflect a progression from foundational Java concepts to more advance
 - Applying **object-oriented principles**: classes, objects, constructors, inheritance, and interfaces  
 - Implementing **method overloading and overriding**  
 - Working with **arrays and ArrayLists**, including arrays of class objects  
+- Using **Java Collection Framework**: ArrayList, LinkedList, HashMap; adding, searching, deleting, and iterating elements  
+- Implementing **sorting algorithms** (Bubble Sort) and understanding algorithm efficiency  
 - Handling **user input** with `Scanner` and dialog boxes  
-- Building **GUI applications** with Swing and AWT, including event listeners  
-- Formatting numeric output using `DecimalFormat`  
-- Structuring programs with multiple classes and modular methods
-- Implementing menu-driven **interfaces** with keyboard shortcuts
-- Performing **file input and output** using `BufferedReader` and `BufferedWriter`
-- Reusing and adapting code across multiple classes
-- Event-driven programming with `ActionListener`, `MouseListener`, and `MenuListener`
-- Managing **cross-platform** GUI behavior (macOS vs Windows)
-- Connecting Java programs to Access databases via **JDBC (UCanAccess)**
-- Writing and **executing SQL queries** (`SELECT`, `INSERT`, `CREATE TABLE`, `WHERE`)
-- Structuring programs with multiple interacting classes
-- Passing data between GUI classes and handling user input dynamically
-- Designing multi-panel GUI applications with Swing and Grid/Border layouts
-- Implementing **event-driven programming** for buttons and user interactions in GUI
-- Managing hardcoded database paths and ensuring cross-class access to **connections**
-- Implementing **basic client-server communication** using Java sockets
-- Using `ServerSocket` and `Socket` for network-based data exchange
-- Sending and receiving data using **input/output streams** over a network
-- Understanding **recursion**, base cases, and recursive method calls
-- Comparing **recursive vs iterative problem-solving** approaches
-- Recognizing performance and memory tradeoffs between recursion and loops
-- Implementing basic sorting algorithms **(Bubble Sort)** and understanding algorithm efficiency  
-- Using **Java Collection Framework:** ArrayList, LinkedList, HashMap  
-- Iterating over collections using for-loops and iterators  
-- Adding, searching, and deleting elements in collections  
-- Formatting output for display and computing aggregates (e.g., averages)  
-- Understanding **trade-offs between different data structures**
+- Building **GUI applications** with Swing and AWT, including event listeners and multi-panel layouts  
+- Formatting numeric output using `DecimalFormat` and computing aggregates (e.g., averages)  
+- Performing **file input/output** using `BufferedReader` and `BufferedWriter`  
+- Connecting to databases using **JDBC (UCanAccess)** and executing SQL (`SELECT`, `INSERT`, `CREATE TABLE`, `WHERE`)  
+- Implementing **basic client-server communication** using `ServerSocket`, `Socket`, and input/output streams  
+- Understanding **recursion**, base cases, recursive calls, and comparing recursive vs iterative approaches  
+- Recognizing performance and memory tradeoffs between recursion, loops, and different data structures  
+- Structuring programs with multiple interacting classes and modular methods  
+- Managing **cross-platform GUI behavior** (macOS vs Windows)  
 
 ---
 
