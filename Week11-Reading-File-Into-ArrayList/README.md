@@ -11,7 +11,7 @@ and analyze data efficiently.
 ## Concepts Practiced
 - File input using File and Scanner
 - Reading data from a `.txt` file
-- Using ArrayList for flexible data storage
+- Using **ArrayList** for flexible data storage
 - Traversing an ArrayList using enhanced for-loops
 - Calculating:
   - Total sum
@@ -21,7 +21,7 @@ and analyze data efficiently.
 - Formatting numeric output with DecimalFormat
 
 ## Program Overview
-- The program reads integer values from a text file (numbers.txt).
+- The program reads integer values from a text file **(numbers.txt)**
 - Each value is stored in an ArrayList<Integer> called monthly.
 - The program processes the list to compute:
   - Total sum of all values
@@ -36,7 +36,7 @@ and analyze data efficiently.
 Note: The numbers.txt file must be included in the repository for the program to run correctly.
 
 ## Important Note About File Path
-The program currently uses an absolute file path:
+The program currently uses an **absolute file path:**
 ```bash
 C:\Users\lamva\numbers.txt
 ```
