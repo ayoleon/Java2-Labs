@@ -237,7 +237,7 @@ java SimpleClient
 - **Description:** Implements the Bubble Sort algorithm to sort an array of integers in ascending order. Demonstrates nested loops, element comparison, and swapping.
 - **Concepts:** Sorting algorithms, nested loops, array manipulation, ascending/descending order, early exit optimization.
 - **Files:** `BubbleSort.java`
-- **How to Run:**
+- **How to Run:**  
   **IntelliJ IDEA:** Set `BubbleSort.java` as main class and Run.  
   **Command Line:**
   ```bash
@@ -253,7 +253,7 @@ java SimpleClient
 - **Description:** Compares different Java collection types for storing and managing student records. Students enter names and grades, and the program demonstrates adding, searching, and deleting entries.
 - **Concepts:** Java Collection Framework, ArrayList, LinkedList, HashMap, iteration with iterators, containsKey(), basic data manipulation, average computation, user input with Scanner.
 - **Files:** `StudentRecords.java`
-- **How to Run:**
+- **How to Run:**  
   **IntelliJ IDEA:** Set `StudentRecords.java` as main class and Run.  
   **Command Line:**
   ```bash
