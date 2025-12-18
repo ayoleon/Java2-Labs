@@ -238,7 +238,7 @@ java SimpleClient
 - **Concepts:** Sorting algorithms, nested loops, array manipulation, ascending/descending order, early exit optimization.
 - **Files:** `BubbleSort.java`
 - **How to Run:**
-  **IntelliJ IDEA:** Set `BubbleSort.java` as main class and Run.
+  **IntelliJ IDEA:** Set `BubbleSort.java` as main class and Run.  
   **Command Line:**
   ```bash
   cd src
@@ -254,7 +254,7 @@ java SimpleClient
 - **Concepts:** Java Collection Framework, ArrayList, LinkedList, HashMap, iteration with iterators, containsKey(), basic data manipulation, average computation, user input with Scanner.
 - **Files:** `StudentRecords.java`
 - **How to Run:**
-  **IntelliJ IDEA:** Set `StudentRecords.java` as main class and Run.
+  **IntelliJ IDEA:** Set `StudentRecords.java` as main class and Run.  
   **Command Line:**
   ```bash
   cd src
