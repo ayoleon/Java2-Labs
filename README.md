@@ -1,25 +1,32 @@
 # Java 2 Labs Repository
 ## Overview
 This repository contains my Java 2 lab projects from my second Java programming course.  
-The labs cover **intermediate Java programming concepts** and real-world application development, including:
+The labs cover intermediate Java programming concepts and real-world application development, including:
 
-- Object-oriented programming: classes, objects, constructors, inheritance, and interfaces  
-- Method overloading and overriding  
-- Arrays, multidimensional arrays, and ArrayLists  
-- GUI programming with Swing and AWT  
-- Event handling and user input parsing  
-- Formatting output with `DecimalFormat`  
-- File input/output operations  
-- Database integration with JDBC and Microsoft Access  
-- Multi-class GUI design and event-driven programming  
-- Basic networking with Java sockets (`ServerSocket`, `Socket`)  
-- Recursive and iterative problem solving  
-- Basic sorting algorithms (Bubble Sort)  
-- Using Java collections: ArrayList, LinkedList, and HashMap, with emphasis on appropriate use cases
+- Object-oriented programming: classes, objects, constructors, inheritance, and interfaces
+- Method overloading and overriding
+- Arrays, multidimensional arrays, and ArrayLists
+- GUI programming with Swing and AWT
+- Event handling and user input parsing
+- Formatting output with DecimalFormat
+- File input/output operations, including file creation, reading, writing, and parsing
+- Database integration with JDBC and Microsoft Access
+- Multi-class GUI design and event-driven programming
+- Basic networking with Java sockets (ServerSocket, Socket)
+- Recursive and iterative problem solving
+- Basic sorting algorithms (Bubble Sort)
+- Using Java collections: ArrayList, LinkedList, and HashMap
+- Multithreading with Thread and Runnable
+- Launching external programs using ProcessBuilder and Runtime.exec()
+- Using nested static classes for reusable utility methods
  
 
 ## Course Progression
-These labs reflect a progression from foundational Java concepts to more advanced, real-world application development. Later labs build on earlier ones, expanding functionality and introducing new programming paradigms such as graphical user interfaces, event-driven design, file input/output, and menu-based application structures. Students also practice algorithmic thinking through recursion and sorting (Bubble Sort), explore basic networking with client-server communication, and learn to select and use appropriate Java Collection Framework structures such as ArrayList, LinkedList, and HashMap.
+These labs reflect a progression from foundational Java concepts to more advanced, real-world application development.  
+Early labs focus on object-oriented principles, arrays, ArrayLists, and basic GUI programming.  
+Mid-course labs introduce menus, event-driven design, file I/O, and database integration.  
+Later labs build on these skills to include multithreading, external application execution, nested static utility classes, and advanced file handling with object conversion and ArrayLists.  
+Also practiced algorithmic thinking, sorting, recursion, and networking concepts, learning to select and use appropriate Java Collection Framework structures and modular design techniques.
 
 ---
 
@@ -38,7 +45,11 @@ These labs reflect a progression from foundational Java concepts to more advance
 - Understanding **recursion**, base cases, recursive calls, and comparing recursive vs iterative approaches  
 - Recognizing performance and memory tradeoffs between recursion, loops, and different data structures  
 - Structuring programs with multiple interacting classes and modular methods  
-- Managing **cross-platform GUI behavior** (macOS vs Windows)  
+- Managing **cross-platform GUI behavior** (macOS vs Windows; weeks 4 and 5)
+- Implementing **multithreading** using `Thread` and `Runnable`
+- **Launching external applications** using `ProcessBuilder` and `Runtime.exec()`
+- Using **nested static classes** for reusable utility methods
+- Advanced file-object conversion: **reading files, parsing data, storing in arrays, converting to class objects, and using ArrayLists**
 
 ---
 
@@ -267,6 +278,59 @@ java SimpleClient
   - Displays class average
   - Allows searching for a student by name
   - Allows removing a student and updates grade display
+ 
+### Week 11 – File Creation and Folder Handling
+- **Description:** Simulates a simple application installer. Prompts user for folder and file names, creates them if they do not exist, and writes a message to the file. Demonstrates folder and file creation and file writing.  
+- **Concepts:** java.io.File, FileWriter, folder creation with mkdir(), file creation with createNewFile(), Scanner input, handling IOException.  
+- **Files:** `ApplicationInstaller.java`  
+- **How to Run:**  
+  **IntelliJ IDEA:** Set `ApplicationInstaller.java` as main class and Run.  
+  **Command Line:**
+  ```bash
+    cd src  
+    javac ApplicationInstaller.java  
+    java ApplicationInstaller
+  ```
+
+
+### Week 11 – Reading File into ArrayLists
+- **Description:** Reads numeric data from a text file and stores it in an ArrayList. Computes total, average, minimum, and maximum values. Demonstrates dynamic data storage using collections.  
+- **Concepts:** ArrayList, file input with Scanner, iteration with for-each loops, Collections methods, DecimalFormat output.  
+- **Files:** `FileData.java`, `numbers.txt`  
+- **How to Run:**  
+  **IntelliJ IDEA:** Set `FileData.java` as main class and Run.  
+  **Command Line:**
+  ```bash
+    cd src  
+    javac FileData.java  
+    java FileData
+  ```
+
+### Week 12 – Threads, Runnable, ProcessBuilder, and Nested Static Class
+- **Description:** GUI-based lab demonstrating multithreading in Java. Buttons trigger threads using Thread, Runnable, and ProcessBuilder to launch applications. Includes a nested static class for reusable interest calculation.  
+- **Concepts:** Thread class, Runnable interface, Thread.sleep(), ProcessBuilder, Swing GUI, ActionListener, nested static class, JOptionPane input/output.  
+- **Files:** `MainFrame.java`, `CalcThread.java`, `CalcThread2.java`, `BrowserThread.java`, `twoAppThread.java`, `Banking.java`  
+- **How to Run:**  
+  **IntelliJ IDEA:** Set `MainFrame.java` as main class and Run.  
+  **Command Line:**
+  ```bash
+    cd src  
+    javac *.java  
+    java MainFrame
+  ```
+
+### Week 13 – Advanced File Handling with Arrays and ArrayLists
+- **Description:** Reads and writes movie data to a file using comma delimiters. Demonstrates parsing data into arrays, creating class objects, storing objects in an ArrayList, and calculating inventory restock costs.  
+- **Concepts:** FileWriter, File, Scanner, string split(), arrays, ArrayList of objects, constructors, data parsing, DecimalFormat.  
+- **Files:** `InventoryFiles.java`, `Movie.java`, `Inventory.java`  
+- **How to Run:**  
+  **IntelliJ IDEA:** Set `InventoryFiles.java` as main class and Run.  
+  **Command Line:**
+  ```bash
+    cd src  
+    javac *.java  
+    java InventoryFiles
+  ```
 ---
 
 ## How to Run All Labs
@@ -282,8 +346,8 @@ To run any lab:
 ---
 
 ## Platform Notes
-- Weeks 1–3, 6-13: Developed and tested on Windows using IntelliJ IDEA.
-- Weeks 4–5: Developed and tested on macOS using IntelliJ IDEA. Some GUI behaviors may differ slightly across operating systems, including:
+- **Weeks 1–3 & 6-13:** Developed and tested on Windows using IntelliJ IDEA.
+- **Weeks 4–5:** Developed and tested on macOS using IntelliJ IDEA. Some GUI behaviors may differ slightly across operating systems, including:
   - Keyboard mnemonics and menu shortcuts may behave differently due to OS-level menu handling.
   - File paths use forward slashes on macOS, which are compatible with Java’s cross-platform file handling.
   
